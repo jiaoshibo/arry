@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str1="we are students";
+        var sp=str1.split("")
+        var str2="aeiou";
+        var ss=str2.split("")
+        for(var i=0;i<str1.length;i++){
+            for(var j=0;j<str2.length;j++){
+                if(sp[i]===ss[j]){
+                    sp.splice(i,1)
+                }
+            }
+        }
+        var pp=sp.join("");
+        console.log(str1)
+        console.log(pp)
+    </script>
+</body>
+</html>
